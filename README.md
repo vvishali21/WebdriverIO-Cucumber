@@ -48,11 +48,11 @@ npm install cucumber-html-reporter --save-dev
 
 Step 4:  Configure the output directory and the language in your wdio.conf.js file:
 
-const cucumberJson = require('wdio-cucumberjs-json-reporter');
+    const cucumberJson = require('wdio-cucumberjs-json-reporter');
 
-exports.config = {
+    exports.config = {
     // ...
-    reporters: ["spec",
+      reporters: ["spec",
         // Like this with the default options, see the options below
 
         // OR like this if you want to set the folder and the language
@@ -61,7 +61,7 @@ exports.config = {
             language: 'en',
         },
         ],
-    ],
+     ],
 
 Step 5:  Create an index.js and specify the options.
 
