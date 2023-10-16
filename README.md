@@ -39,16 +39,17 @@ Step 2: npm init wdio
 ? Do you want me to run `npm install` Yes
 
 
-Step 3: For cucumber report
+Step 3: For cucumber report install
 
-Install:  npm install wdio-cucumberjs-json-reporter --save-dev
+npm install wdio-cucumberjs-json-reporter --save-dev
 
-           npm install cucumber-html-reporter --save-dev
+npm install cucumber-html-reporter --save-dev
 
 
 Step 4:  Configure the output directory and the language in your wdio.conf.js file:
 
 const cucumberJson = require('wdio-cucumberjs-json-reporter');
+
 exports.config = {
     // ...
     reporters: ["spec",
@@ -63,10 +64,11 @@ exports.config = {
     ],
 
 Step 5:  Create an index.js and specify the options.
+
 var reporter = require('cucumber-html-reporter');
 
 var options = {
-        theme: 'bootstrap',
+        theme: 'bootstrap',     
         brandTitle: 'Final Test Summary',
         jsonDir: './reporter/json/',
         output: './reporter/cucumber-htmlreport.html',
@@ -87,7 +89,6 @@ var options = {
         },
         failedSummaryReport: true,
     };
-
     reporter.generate(options);
     
 
