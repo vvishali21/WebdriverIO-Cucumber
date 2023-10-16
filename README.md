@@ -1,6 +1,7 @@
 # WebdriverIO_Cucumber
 
 Step 1: npm init -y
+
 Step 2: npm init wdio
 
 ? A project named "webdriverio_cucumber" was detected at "C:\Users\meteoriQs_user3\WebdriverIO_Cucumber", correct? Yes
